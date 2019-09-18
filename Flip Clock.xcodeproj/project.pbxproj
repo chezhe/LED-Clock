@@ -16,6 +16,8 @@
 		83BA2B82232E714F008C64EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BA2B81232E714F008C64EB /* Preview Assets.xcassets */; };
 		83BA2B85232E714F008C64EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BA2B83232E714F008C64EB /* LaunchScreen.storyboard */; };
 		83BA2B8E232E88A7008C64EB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BA2B8D232E88A7008C64EB /* Card.swift */; };
+		83FC9359233263C20041AA9E /* Bell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FC9358233263C20041AA9E /* Bell.swift */; };
+		83FC935B233267E60041AA9E /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FC935A233267E60041AA9E /* Setting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		83BA2B86232E714F008C64EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83BA2B8C232E802F008C64EB /* Flip Clock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Flip Clock.entitlements"; sourceTree = "<group>"; };
 		83BA2B8D232E88A7008C64EB /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		83FC9358233263C20041AA9E /* Bell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bell.swift; sourceTree = "<group>"; };
+		83FC935A233267E60041AA9E /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				83BA2B78232E714D008C64EB /* AppDelegate.swift */,
 				83BA2B7A232E714D008C64EB /* SceneDelegate.swift */,
 				83BA2B7C232E714D008C64EB /* Home.swift */,
+				83FC935A233267E60041AA9E /* Setting.swift */,
+				83FC9358233263C20041AA9E /* Bell.swift */,
 				83BA2B8D232E88A7008C64EB /* Card.swift */,
 				839EB6812331158700485C66 /* Second.swift */,
 				83BA2B7E232E714F008C64EB /* Assets.xcassets */,
@@ -162,6 +168,8 @@
 				83BA2B7B232E714D008C64EB /* SceneDelegate.swift in Sources */,
 				83BA2B7D232E714D008C64EB /* Home.swift in Sources */,
 				83BA2B8E232E88A7008C64EB /* Card.swift in Sources */,
+				83FC935B233267E60041AA9E /* Setting.swift in Sources */,
+				83FC9359233263C20041AA9E /* Bell.swift in Sources */,
 				839EB6822331158700485C66 /* Second.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

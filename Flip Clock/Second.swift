@@ -14,18 +14,18 @@ struct Second: View {
     let timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
 
     var body: some View {
-        RoundedRectangle(cornerRadius: 10, style: .circular)
+        RoundedRectangle(cornerRadius: 5, style: .circular)
             .fill(Color.gray.opacity(0.1))
-            .frame(width: 100, height: 100, alignment: Alignment.center)
+            .frame(width: 90, height: 90, alignment: Alignment.center)
+            .padding(.horizontal, 15)
             .overlay(
                 HStack {
                     Text(now)
                         .fontWeight(.bold)
                         .foregroundColor(Color.red)
-                        .font(Font.custom("LESLIE", size: 60))
+                        .font(Font.custom("LESLIE", size: 50))
                 }
-                .padding()
-                .foregroundColor(.white),
+                .padding(),
                 alignment: .center
             )
             .onReceive(timer) {_ in

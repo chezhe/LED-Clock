@@ -11,12 +11,9 @@ import SwiftUI
 struct Home: View {
     var body: some View {
         Rectangle()
-        .fill(Color.black)
-        .scaledToFill()
-        .overlay(
-            VStack{
-                Image("setting")
-                
+            .fill(Color.black)
+            .scaledToFill()
+            .overlay(
                 HStack{
                     Card(now: "00", format: "HH")
                     
@@ -27,23 +24,20 @@ struct Home: View {
                     
                     Card(now: "00", format: "mm")
                         
-                    Rectangle()
-                        .fill(Color.black)
-                        .frame(width: 100, height: 200, alignment: .bottom)
-                        .scaledToFill()
-                        .padding(.horizontal, 10)
-                        .overlay(
-                            HStack {
-                                Second(now: "00")
-                            },
-                            alignment: .bottom
-                        )
-                }
-                .padding()
-            },
-            alignment: .center
-        )
 
+                    VStack{
+                        NavigationLink(
+                            destination: Setting()
+                        ) {
+                            Bell()
+                        }.navigationBarTitle(Text("Landmarks"))
+                        
+                        Second(now: "00")
+                    }
+                }
+                .padding(),
+                alignment: .center
+            )
     }
 }
 
