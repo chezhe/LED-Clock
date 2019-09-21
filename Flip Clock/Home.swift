@@ -9,35 +9,34 @@
 import SwiftUI
 
 struct Home: View {
+    @State var showingSetting = false
     var body: some View {
-        Rectangle()
-            .fill(Color.black)
-            .scaledToFill()
-            .overlay(
-                HStack{
-                    Card(now: "00", format: "HH")
-                    
-                    Text(":")
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.red)
-                        .font(Font.custom("LESLIE", size: 120))
-                    
-                    Card(now: "00", format: "mm")
-                        
+        ZStack {
+            Color.black
+                 .edgesIgnoringSafeArea(.all)
+            
+            HStack{
+                Card(now: "00", format: "HH")
 
-                    VStack{
-                        NavigationLink(
-                            destination: Setting()
-                        ) {
-                            Bell()
-                        }.navigationBarTitle(Text("Landmarks"))
-                        
-                        Second(now: "00")
-                    }
-                }
-                .padding(),
-                alignment: .center
-            )
+                Text(":")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.red)
+                    .font(Font.custom("LESLIE", size: 120))
+
+                Card(now: "00", format: "mm")
+
+
+                VStack{
+//                    Button(action: { self.showingSetting.toggle() }) {
+//                        Bell()
+//                    }
+                    
+                    Second(now: "00")
+                }.frame(height: 250, alignment: .bottom)
+            }
+        }.sheet(isPresented: $showingSetting) {
+            Setting()
+        }
     }
 }
 

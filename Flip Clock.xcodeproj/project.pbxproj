@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		839EB680233112DA00485C66 /* LESLIE.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 839EB67F233112DA00485C66 /* LESLIE.TTF */; };
 		839EB6822331158700485C66 /* Second.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839EB6812331158700485C66 /* Second.swift */; };
+		83B688A82335C5AA00172A91 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B688A72335C5AA00172A91 /* Ring.swift */; };
+		83B688AA2335E9CD00172A91 /* BellCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B688A92335E9CD00172A91 /* BellCard.swift */; };
+		83B688AE2336296E00172A91 /* UserSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B688AD2336296E00172A91 /* UserSetting.swift */; };
 		83BA2B79232E714D008C64EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BA2B78232E714D008C64EB /* AppDelegate.swift */; };
 		83BA2B7B232E714D008C64EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BA2B7A232E714D008C64EB /* SceneDelegate.swift */; };
 		83BA2B7D232E714D008C64EB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BA2B7C232E714D008C64EB /* Home.swift */; };
@@ -23,7 +26,10 @@
 /* Begin PBXFileReference section */
 		839EB67F233112DA00485C66 /* LESLIE.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = LESLIE.TTF; sourceTree = "<group>"; };
 		839EB6812331158700485C66 /* Second.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Second.swift; sourceTree = "<group>"; };
-		83BA2B75232E714D008C64EB /* Flip Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flip Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B688A72335C5AA00172A91 /* Ring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		83B688A92335E9CD00172A91 /* BellCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellCard.swift; sourceTree = "<group>"; };
+		83B688AD2336296E00172A91 /* UserSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSetting.swift; sourceTree = "<group>"; };
+		83BA2B75232E714D008C64EB /* 复古时钟.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "复古时钟.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83BA2B78232E714D008C64EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83BA2B7A232E714D008C64EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		83BA2B7C232E714D008C64EB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -59,7 +65,7 @@
 		83BA2B76232E714D008C64EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				83BA2B75232E714D008C64EB /* Flip Clock.app */,
+				83BA2B75232E714D008C64EB /* 复古时钟.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,9 +78,12 @@
 				83BA2B7A232E714D008C64EB /* SceneDelegate.swift */,
 				83BA2B7C232E714D008C64EB /* Home.swift */,
 				83FC935A233267E60041AA9E /* Setting.swift */,
+				83B688A72335C5AA00172A91 /* Ring.swift */,
 				83FC9358233263C20041AA9E /* Bell.swift */,
 				83BA2B8D232E88A7008C64EB /* Card.swift */,
+				83B688AD2336296E00172A91 /* UserSetting.swift */,
 				839EB6812331158700485C66 /* Second.swift */,
+				83B688A92335E9CD00172A91 /* BellCard.swift */,
 				83BA2B7E232E714F008C64EB /* Assets.xcassets */,
 				83BA2B83232E714F008C64EB /* LaunchScreen.storyboard */,
 				83BA2B86232E714F008C64EB /* Info.plist */,
@@ -109,7 +118,7 @@
 			);
 			name = "Flip Clock";
 			productName = "Flip Clock";
-			productReference = 83BA2B75232E714D008C64EB /* Flip Clock.app */;
+			productReference = 83BA2B75232E714D008C64EB /* 复古时钟.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -164,11 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B688AA2335E9CD00172A91 /* BellCard.swift in Sources */,
 				83BA2B79232E714D008C64EB /* AppDelegate.swift in Sources */,
 				83BA2B7B232E714D008C64EB /* SceneDelegate.swift in Sources */,
+				83B688AE2336296E00172A91 /* UserSetting.swift in Sources */,
 				83BA2B7D232E714D008C64EB /* Home.swift in Sources */,
 				83BA2B8E232E88A7008C64EB /* Card.swift in Sources */,
 				83FC935B233267E60041AA9E /* Setting.swift in Sources */,
+				83B688A82335C5AA00172A91 /* Ring.swift in Sources */,
 				83FC9359233263C20041AA9E /* Bell.swift in Sources */,
 				839EB6822331158700485C66 /* Second.swift in Sources */,
 			);
@@ -307,18 +319,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Flip Clock/Flip Clock.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Flip Clock/Preview Content\"";
-				DEVELOPMENT_TEAM = KJB8DLYA43;
+				DEVELOPMENT_TEAM = UJY4NHS9W7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Flip Clock/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "cc.loaf.Flip-Clock";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.loaf.vidis;
+				PRODUCT_NAME = "复古时钟";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,18 +343,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Flip Clock/Flip Clock.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Flip Clock/Preview Content\"";
-				DEVELOPMENT_TEAM = KJB8DLYA43;
+				DEVELOPMENT_TEAM = UJY4NHS9W7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Flip Clock/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "cc.loaf.Flip-Clock";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.loaf.vidis;
+				PRODUCT_NAME = "复古时钟";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

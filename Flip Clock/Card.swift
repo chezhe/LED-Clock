@@ -17,13 +17,13 @@ struct Card: View {
     var body: some View {
         RoundedRectangle(cornerRadius: 10, style: .circular)
             .fill(Color.gray.opacity(0.1))
-            .frame(width: 200, height: 200, alignment: Alignment.center)
+            .frame(width: 250, height: 250, alignment: Alignment.center)
             .overlay(
                 HStack {
                     Text(now)
                         .fontWeight(.bold)
                         .foregroundColor(Color.red)
-                        .font(Font.custom("LESLIE", size: 150))
+                        .font(Font.custom("LESLIE", size: 160))
                 }
                 .foregroundColor(.white),
                 alignment: .center

@@ -17,7 +17,11 @@ struct Bell: View {
         .padding(.bottom, 15)
         .overlay(
             HStack {
-                Image("bell")
+                if GlobalSettings.isBellEnabled {
+                    Image("bell")
+                } else {
+                    Image("close")
+                }
             }
             .padding()
             .foregroundColor(.red),
